@@ -54,7 +54,7 @@ export function Navbar() {
           <div className="hidden md:block">
             <Button
               variant="outline"
-              className="cursor-pointer border-red-500 text-white hover:bg-orange-600 hover:text-green-700 bg-orange-700 tracking-wider"
+              className="cursor-pointer border-red-500 text-white hover:bg-orange-600 bg-orange-700 tracking-wider"
             >
               Order Now
             </Button>
