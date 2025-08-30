@@ -65,7 +65,7 @@ export function Hero() {
               </motion.p>
 
               <motion.h1
-                className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] text-balance"
+                className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-[1.1] text-balance font-serif"
                 variants={textVariants as Variants}
               >
                 <span className="block">PREMIUM</span>
