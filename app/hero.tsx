@@ -1,49 +1,115 @@
+"use client";
 import { Navbar } from "@/components/layout/navbar";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { motion, Variants } from "framer-motion";
 
 export function Hero() {
+  const textVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
+
+  const imageVariants = {
+    hidden: { opacity: 0, scale: 1, rotate: 0 },
+    visible: {
+      opacity: 1,
+      scale: 0.8,
+      rotate: 12,
+      transition: { duration: 1, ease: "easeOut", delay: 0.5 },
+    },
+  };
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
   return (
-    <section className="relative min-h-screen"
-    style={{
-      backgroundImage: "url('/bg.jpg')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-    }}>
+    <section
+      className="relative min-h-screen overflow-hidden"
+      style={{
+        backgroundImage: "url('/bg.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <Navbar />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center  py-16">
-          <div className="space-y-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center py-16">
+          <motion.div
+            className="space-y-8"
+            variants={containerVariants as Variants}
+            initial="hidden"
+            animate="visible"
+          >
             <div className="space-y-3">
-              <p className="text-orange text-lg tracking-wider uppercase text-montse font-bold">
+              <motion.p
+                className="text-orange text-lg tracking-wider uppercase text-montse font-bold"
+                variants={textVariants as Variants}
+              >
                 Nepalese <span className="text-white"> Sultan</span> Butcher
-              </p>
+              </motion.p>
 
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
+              <motion.h1
+                className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight"
+                variants={textVariants as Variants}
+              >
                 <span className="font-serif">PREMIUM QUALITY BUTCHERS.</span>
-              </h1>
+              </motion.h1>
 
-              <p className="text-gray-300 text-lg leading-relaxed max-w-lg">
+              <motion.p
+                className="text-gray-300 text-lg leading-relaxed max-w-lg"
+                variants={textVariants as Variants}
+              >
                 Experience the best of Nepal{"'"}s meat selection right here in
-                Australia. Nepalese Sultan Butcher in <span className="text-orange cursor-pointer">Glenroy</span> is your source for
-                premium cuts of goat, chicken, lamb, and buff.
-              </p>
+                Australia. Nepalese Sultan Butcher in{" "}
+                <span className="text-orange cursor-pointer">Glenroy</span> is
+                your source for premium cuts of goat, chicken, lamb, and buff.
+              </motion.p>
             </div>
 
-            <div className="pt-4">
+            <motion.div variants={textVariants as Variants} className="pt-4">
               <Button
                 variant="outline"
                 size="lg"
-                className="border-red-500 text-white bg-orange hover:bg-orange-700 hover:text-white cursor-pointer font-semibold tracking-wider px-8 py-3"
+                className="
+                  btn-glow
+                  text-white
+                  border-none
+                  bg-orange
+                  hover:bg-orange-700
+                  cursor-pointer
+                  font-semibold
+                  tracking-wider
+                  px-8
+                  py-3
+                  rounded-md
+                "
               >
                 VIEW PRODUCTS
               </Button>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           <div className="relative lg:justify-self-end">
-            <div className="relative">
+            <motion.div
+              className="relative"
+              variants={imageVariants as Variants}
+              initial="hidden"
+              animate="visible"
+            >
               <Image
                 src="/dagger.png"
                 width={500}
@@ -52,7 +118,7 @@ export function Hero() {
                 className="w-full max-w-2xl h-auto object-cover rounded-lg rotate-12 scale-150"
                 draggable={false}
               />
-            </div>
+            </motion.div>
           </div>
         </div>
 
