@@ -1,13 +1,13 @@
-import AboutSection from "./about";
 import { Hero } from "./hero";
 import ProductsSection from "./products";
+import VisitSection from "./visit";
 
 export default function Home() {
   return (
     <div>
       <Hero />
       <ProductsSection />
-      <AboutSection />
+      <VisitSection />
     </div>
   );
 }
