@@ -56,7 +56,7 @@ export function Navbar() {
               variant="outline"
               className=" cursor-pointer btn-glow border-none text-white hover:bg-orange-600 bg-orange-700 tracking-wider"
             >
-              Order Now
+              Contact Us
             </Button>
           </div>
 
