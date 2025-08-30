@@ -8,16 +8,16 @@ export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="relative w-full bg-transparent backdrop-blur-sm">
+    <nav className="relative w-full bg-transparent">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <Image
               src="/logo.png"
-              height={64}
-              width={64}
+              height={100}
+              width={100}
               alt="Nepalese Sultan Butcher"
-              className="scale-150"
+              className="scale-150 h-24"
               draggable={false}
             />
           </div>

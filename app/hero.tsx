@@ -4,7 +4,12 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen bg-black">
+    <section className="relative min-h-screen"
+    style={{
+      backgroundImage: "url('/bg.jpg')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}>
       <Navbar />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,6 +50,7 @@ export function Hero() {
                 height={500}
                 alt="Premium T-bone steak on wooden cutting board with cleaver and seasonings"
                 className="w-full max-w-2xl h-auto object-cover rounded-lg rotate-12 scale-150"
+                draggable={false}
               />
             </div>
           </div>
