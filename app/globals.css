@@ -123,6 +123,10 @@
   body {
     @apply bg-background text-foreground;
   }
+  body::selection, body *::selection {
+    background: #056937;
+    color: #fff;
+  }
   .text-orange {
     color: #f04603;
   }

@@ -27,12 +27,17 @@ const PRODUCT_CARDS = [
 
 const ProductsSection = () => {
   return (
-    <section className="w-full bg-gradient-to-b from-orange-100 to-orange-200 flex flex-col items-center gap-10 py-20 px-4">
+    <section className="relative w-full bg-gradient-to-b from-orange-100 to-orange-200 flex flex-col items-center gap-10 py-20 px-4 overflow-hidden">
+      <div
+        className="pointer-events-none select-none absolute inset-0 z-0 bg-[url('/logo-gap.png')] bg-repeat bg-[length:400px_400px] opacity-5"
+        aria-hidden="true"
+      />
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-4xl text-center space-y-6"
+        className="relative z-10 max-w-4xl text-center space-y-6"
       >
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-emerald-800 leading-tight">
           <span className="font-serif text-balance">
@@ -41,14 +46,14 @@ const ProductsSection = () => {
           </span>
         </h2>
         <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-          Whatever the occasion, we{"'"}ve got you covered with a large selection of
-          Premium Quality Meats
+          Whatever the occasion, we{"'"}ve got you covered with a large
+          selection of Premium Quality Meats
         </p>
       </motion.div>
 
-      <div className="h-px bg-gradient-to-r from-transparent via-emerald-300 to-transparent w-full max-w-4xl" />
+      <div className="relative z-10 h-px bg-gradient-to-r from-transparent via-emerald-300 to-transparent w-full max-w-4xl" />
 
-      <section className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+      <section className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
         {PRODUCT_CARDS.map((item, index) => (
           <ProductCard
             key={item.title}
@@ -66,7 +71,7 @@ const ProductsSection = () => {
         transition={{ duration: 0.6, delay: 0.8 }}
         whileHover={{ scale: 1.05, y: -2 }}
         whileTap={{ scale: 0.98 }}
-        className="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-lg"
+        className="relative z-10 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-lg"
       >
         Contact Now
       </motion.button>
