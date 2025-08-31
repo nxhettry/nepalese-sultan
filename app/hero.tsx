@@ -94,7 +94,8 @@ export function Hero() {
                   bg-orange-600 
                   hover:bg-orange-700 
                   text-white 
-                  font-bold 
+                  font-montse
+                  cursor-pointer 
                   tracking-wide 
                   px-10 
                   py-4 

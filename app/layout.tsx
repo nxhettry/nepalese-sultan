@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Signika, Montserrat } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/layout/footer";
 
 const signika = Signika({
   variable: "--font-signika",
@@ -34,6 +35,7 @@ export default function RootLayout({
         `}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );
