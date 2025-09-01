@@ -78,7 +78,7 @@ export default function VisitSection() {
                     variant="outline"
                     size="sm"
                     asChild
-                    className="w-full justify-start hover:bg-emerald-50 hover:border-emerald-200 transition-colors bg-transparent"
+                    className="w-full justify-start hover:bg-emerald-50 hover:border-emerald-200 transition-colors bg-white"
                   >
                     <a href="tel:0393805568" className="flex items-center hover:text-green-700">
                       <Phone className="mr-3 h-4 w-4 text-orange-600" />
@@ -89,7 +89,7 @@ export default function VisitSection() {
                     variant="outline"
                     size="sm"
                     asChild
-                    className="w-full justify-start hover:bg-emerald-50 hover:border-emerald-200 transition-colors bg-transparent"
+                    className="w-full justify-start hover:bg-emerald-50 hover:border-emerald-200 transition-colors bg-white"
                   >
                     <a href="tel:0433165150" className="flex items-center hover:text-green-700">
                       <Phone className="mr-3 h-4 w-4 text-orange-600" />
@@ -100,7 +100,7 @@ export default function VisitSection() {
                     variant="outline"
                     size="sm"
                     asChild
-                    className="w-full justify-start hover:bg-emerald-50 hover:border-emerald-200 transition-colors bg-transparent"
+                    className="w-full justify-start hover:bg-emerald-50 hover:border-emerald-200 transition-colors bg-white"
                   >
                     <a href="tel:0431333640" className="flex items-center hover:text-green-700">
                       <Phone className="mr-3 h-4 w-4 text-orange-600" />

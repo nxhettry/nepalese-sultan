@@ -16,7 +16,9 @@ const TeamSection = () => {
         </p>
       </div>
 
-      <div className="w-[90%] mx-auto bg-orange min-h-[35rem] rounded-xl p-4"></div>
+      <div className="w-[90%] mx-auto bg-orange min-h-[35rem] rounded-xl p-4">
+        
+      </div>
     </section>
   );
 };
