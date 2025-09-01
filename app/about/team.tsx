@@ -35,7 +35,7 @@ const TEAM_MEMBERS = [
 
 const TeamSection = () => {
   return (
-    <section className="w-full flex flex-col items-center gap-12 py-20 px-4">
+    <section className="w-full flex flex-col items-center gap-12 py-20 px-4 bg-orange-100">
       <div className="flex flex-col items-center gap-3 max-w-5xl text-green">
         <h2 className="text-3xl font-thin font-montse">
           MEET THE TEAM AT ....

@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="relative flex flex-col justify-between items-center gap-3 w-full pb-4">
+    <footer className="relative flex flex-col justify-between items-center gap-3 w-full pb-4 bg-orange-50">
       <div
         className="pointer-events-none select-none absolute inset-0 z-0 bg-[url('/logo-gap.png')] bg-repeat bg-[length:120px_120px] opacity-10"
         aria-hidden="true"
