@@ -4,7 +4,7 @@ import { MapPin, Clock, Phone, Navigation } from "lucide-react";
 
 export default function VisitSection() {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-background to-muted/30 shadow-xs">
+    <section className="text-green py-16 md:py-24 bg-gradient-to-b from-background to-muted/30 shadow-xs">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance text-foreground">

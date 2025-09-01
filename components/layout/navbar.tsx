@@ -29,24 +29,24 @@ export function Navbar() {
             <div className="ml-10 font-montse font-bold flex items-baseline space-x-8">
               <Link
                 href="/"
-                className={` hover:text-orange-700 px-3 py-2 text-sm font-medium transition-colors ${
-                  pathname === "/" ? "text-orange" : "text-white"
+                className={` hover:text-orange-700 px-3 py-2 text-base font-medium transition-colors ${
+                  pathname === "/" ? "text-orange border-b-2 border-orange-600 rounded-b-xl" : "text-white"
                 }`}
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className={` hover:text-orange-700 px-3 py-2 text-sm font-medium transition-colors ${
-                  pathname === "/about" ? "text-orange" : "text-white"
+                className={` hover:text-orange-700 px-3 py-2 text-base font-medium transition-colors ${
+                  pathname === "/about" ? "text-orange border-b-2 border-orange-600 rounded-b-xl" : "text-white"
                 }`}
               >
                 About Us
               </Link>
               <Link
                 href="/products"
-                className={` hover:text-orange-700 px-3 py-2 text-sm font-medium transition-colors ${
-                  pathname === "/products" ? "text-orange" : "text-white"
+                className={` hover:text-orange-700 px-3 py-2 text-base font-medium transition-colors ${
+                  pathname === "/products" ? "text-orange border-b-2 border-orange-600 rounded-b-xl" : "text-white"
                 }`}
               >
                 Products
@@ -155,7 +155,7 @@ export function Navbar() {
           </Link>
           <Button
             variant="outline"
-            className="w-48 border-none text-white hover:bg-orange-600 bg-orange-700 tracking-wider font-montse text-lg"
+            className="w-48 border-none rounded-b-xl text-white hover:bg-orange-600 bg-orange-700 tracking-wider font-montse text-lg"
             onClick={() => setIsOpen(false)}
           >
             Contact Us

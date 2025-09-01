@@ -71,7 +71,7 @@ const ProductsSection = () => {
         transition={{ duration: 0.6, delay: 0.8 }}
         whileHover={{ scale: 1.05, y: -2 }}
         whileTap={{ scale: 0.98 }}
-        className="relative z-10 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-lg"
+        className="border-b-2 cursor-pointer border-orange-500 relative z-10 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-lg"
       >
         Contact Now
       </motion.button>
