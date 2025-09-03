@@ -30,7 +30,7 @@ export function Navbar() {
               <Link
                 href="/"
                 className={` hover:text-orange-700 px-3 py-2 text-base font-medium transition-colors ${
-                  pathname === "/" ? "text-orange border-b-2 border-orange-600 rounded-b-xl" : "text-white"
+                  pathname === "/" ? "text-orange border-b-2 border-orange-500" : "text-white"
                 }`}
               >
                 Home
@@ -38,7 +38,7 @@ export function Navbar() {
               <Link
                 href="/about"
                 className={` hover:text-orange-700 px-3 py-2 text-base font-medium transition-colors ${
-                  pathname === "/about" ? "text-orange border-b-2 border-orange-600 rounded-b-xl" : "text-white"
+                  pathname === "/about" ? "text-orange border-b-2 border-orange-500" : "text-white"
                 }`}
               >
                 About Us
@@ -46,7 +46,7 @@ export function Navbar() {
               <Link
                 href="/products"
                 className={` hover:text-orange-700 px-3 py-2 text-base font-medium transition-colors ${
-                  pathname === "/products" ? "text-orange border-b-2 border-orange-600 rounded-b-xl" : "text-white"
+                  pathname === "/products" ? "text-orange border-b-2 border-orange-500" : "text-white"
                 }`}
               >
                 Products
